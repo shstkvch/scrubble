@@ -88,6 +88,11 @@ function loadWordlist() {
 function validateWord() {
     const word = typingBuffer;
 
+    if ( ! word.length ) {
+        incorrect();
+        return;
+    }
+
     // using letter not in stack
     let tempStack = [...letterStack];
     for ( let i in word) {
