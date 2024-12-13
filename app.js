@@ -14,6 +14,7 @@ let letterStack = [];
 
 loadWordlist();
 setupStack();
+render();
 
 
 
@@ -314,5 +315,3 @@ function shuffle(array) {
         array[randomIndex], array[currentIndex]];
     }
   }
-
-render();
