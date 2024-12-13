@@ -63,7 +63,7 @@ function typeLetter(e) {
     }
 
     if ( key.match(/^[a-zA-Z]$/) ) {
-        typingBuffer += e.key;
+        typingBuffer += e.key.toLowerCase();
         return;
     }
 }
